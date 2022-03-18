@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'fpages'
+    'apages'
 ]
 
 SITE_ID = 1
@@ -128,6 +128,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-[]
+STATICFILES_DIR = [BASE_DIR / "static"]
 
 
