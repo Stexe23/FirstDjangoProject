@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-{% load static %}
-<html>
-<head>
-<title>{{ flatpage.title }}</title>
-</head>
-<body>
-    {{ flatpage.content }}
-    {{ flatpage.content }}
-</body>
-</html>
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+    <h3>Оформление раз</h3>
+{{ flatpage.content }}
+
+    <hr>
+    <h3>Оформление два</h3>
+{{ flatpage.content }}
+{% endblock content %}
